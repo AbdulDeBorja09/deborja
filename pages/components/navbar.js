@@ -4,13 +4,13 @@ import Image from "next/image";
 export default function Navbar() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg ">
+      <nav className="navbar navbar-expand-lg fixed-top ">
         <div className="nav-inner container-fluid ">
           <a className="navbar-brand" href="#">
             <img className="logo" src={`/image/logo.png`} />
           </a>
           <button
-            className="navbar-toggler"
+            className="navbar-toggler text-white"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavAltMarkup"
@@ -18,7 +18,7 @@ export default function Navbar() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon text-white"></span>
           </button>
           <div className="collapse  navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav ml-auto sm-collapse">

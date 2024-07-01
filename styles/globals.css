@@ -5,22 +5,20 @@
 * {
   margin: 0;
   padding: 0;
-  scrollbar-width: thin;
-  scrollbar-color: #272727;
-}
-
-@font-face {
-  font-family: "glacial-Regular";
-  src: url("/fonts/GlacialIndifference-Regular.otf") format("otf");
+  scrollbar-width: none;
 }
 @font-face {
-  font-family: "glacial-Bold";
-  src: url("/fonts/GlacialIndifference-Bold.otf") format("otf");
-  font-weight: 700;
-  font-style: normal;
+  font-family: "galcial";
+  src: url("/fonts/GlacialIndifference-Regular.otf") format("opentype");
 }
-::-webkit-scrollbar-thumb {
-  background: #272727;
+@font-face {
+  font-family: "galcial-bold";
+  src: url("/fonts/GlacialIndifference-Bold.otf") format("opentype");
+}
+::-webkit-scrollbar {
+  display: none;
+}
+nav {
 }
 .nav-inner {
   display: flex;
@@ -35,7 +33,9 @@
 .navbar-nav .nav-link {
   font-weight: 400;
   letter-spacing: 2px;
-  margin-left: 50px;
+  padding-left: 70px;
+  margin-left: 70px;
+  font-family: "galcial", sans-serif;
 }
 .navbar-brand {
   order: 0;
@@ -53,8 +53,31 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  font-family: "glacial-Bold", sans-serif;
   font-weight: 100;
+  color: white;
+}
+.maindiv h1 {
+  font-weight: 800;
+  letter-spacing: 4px;
+  font-family: "galcial-bold", sans-serif;
+  font-size: 60px;
+}
+.maindiv h6 {
+  letter-spacing: 4px;
+  font-weight: 400;
+  color: #c6a586;
+  font-family: "galcial", sans-serif;
+  font-size: 15px;
+}
+
+.maindiv h1 .brown {
+  color: #917f66;
+}
+.maindiv .info {
+  padding-left: 100px;
+  margin-top: 250px;
+}
+.navbar-toggler-icon {
   color: white;
 }
 .aboutdiv {
@@ -62,10 +85,19 @@
   background-color: #272727;
   height: 1000vh;
   background-size: contain;
-
   background-position: center;
 }
-
+.hiremenbtn {
+  border: 1px solid white;
+  color: white;
+  border-radius: 0px;
+  padding: 10px 70px;
+  margin-top: 70px;
+}
+.hiremenbtn:hover {
+  border: 1px solid #c6a586;
+  color: #c6a586;
+}
 @media screen and (max-width: 982px) {
   .nav-inner {
     padding: 20px 20px;
@@ -74,7 +106,31 @@
   .navbar-nav .nav-link {
     font-weight: 400;
     letter-spacing: 2px;
-    margin-left: 10px;
-    margin-top: 7px;
+    margin-left: 0px;
+    padding-left: 10px;
+    padding-top: 7px;
+  }
+  .maindiv .info {
+    padding-left: 50px;
+    margin-top: 200px;
+  }
+  .navbar-nav .nav-link {
+    background-color: #0000002f;
+  }
+}
+@media screen and (max-width: 440px) {
+  .maindiv h1 {
+    font-size: 35px;
+  }
+  .maindiv h6 {
+    font-size: 10px;
+  }
+  .hiremenbtn {
+    border: 1px solid white;
+    color: white;
+    border-radius: 0px;
+    padding: 5px 50px;
+    margin-top: 34px;
+    font-size: 13px;
   }
 }
