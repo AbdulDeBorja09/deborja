@@ -1,10 +1,12 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
 * {
   margin: 0;
   padding: 0;
+  scrollbar-width: thin;
+  scrollbar-color: #272727;
 }
 
 @font-face {
@@ -17,6 +19,34 @@
   font-weight: 700;
   font-style: normal;
 }
+::-webkit-scrollbar-thumb {
+  background: #272727;
+}
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-inner {
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-left: 50px;
+}
+.navbar-brand {
+  order: 0;
+}
+.navbar-nav {
+  order: 0;
+  margin-left: auto;
+}
+.logo {
+  width: 50px;
+}
 .maindiv {
   background-image: url("/image/bg1.png");
   height: 100vh;
@@ -28,33 +58,23 @@
   color: white;
 }
 .aboutdiv {
-  background-image: url("/image/aboutbg.png");
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url("/image/elementbg.png");
+  background-color: #272727;
+  height: 1000vh;
+  background-size: contain;
+
   background-position: center;
 }
-.innerdiv {
-  backdrop-filter: blur(18px);
-  font-family: "glacial-Bold", sans-serif;
-}
-.innerdiv h1 {
-  color: white;
-  font-weight: 700;
-  font-size: 2cm;
-  letter-spacing: 5px;
-}
-.innerdiv h3 {
-  color: white;
-  font-weight: 700;
-  font-size: 20px;
-  letter-spacing: 3px;
-}
-.innerdiv span {
-  color: #af7e64;
-}
-.innerdiv h2 {
-  color: #af7e64;
-  font-weight: 500;
-  font-size: 20;
+
+@media screen and (max-width: 982px) {
+  .nav-inner {
+    padding: 20px 20px;
+  }
+
+  .navbar-nav .nav-link {
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-left: 10px;
+    margin-top: 7px;
+  }
 }
