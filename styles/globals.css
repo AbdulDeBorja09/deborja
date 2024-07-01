@@ -1,7 +1,3 @@
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
-
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +14,6 @@
 ::-webkit-scrollbar {
   display: none;
 }
-
 .nav-inner {
   display: flex;
   justify-content: space-between;
@@ -79,13 +74,6 @@
 .navbar-toggler-icon {
   color: white;
 }
-.aboutdiv {
-  background-image: url("/image/elementbg.png");
-  background-color: #272727;
-  height: 1000vh;
-  background-size: contain;
-  background-position: center;
-}
 .hiremenbtn {
   border: 1px solid white;
   color: white;
@@ -96,6 +84,133 @@
 .hiremenbtn:hover {
   border: 1px solid #c6a586;
   color: #c6a586;
+}
+.elementbg {
+  background-image: url("/image/elementbg.png");
+  background-color: #272727;
+  height: fit-content;
+  background-size: contain;
+  background-position: center;
+}
+.about {
+  padding: 100px 170px 100px 170px;
+  letter-spacing: 3px;
+}
+.about .title {
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+.about .brown {
+  color: #c6a586;
+}
+.personal-info {
+  padding: 0px 75px;
+}
+.personal-info h1 {
+  color: white;
+  font-size: 23px;
+  font-family: "galcial-bold", sans-serif;
+}
+.personal-info h2 {
+  color: #c6a586;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "galcial", sans-serif;
+  margin-top: 15px;
+}
+.personal-info p {
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
+  line-height: 1.8;
+  font-weight: 500;
+  font-family: "galcial", sans-serif;
+  margin-top: 30px;
+}
+
+.education-info {
+  padding: 0px 70px;
+}
+.education-info .school {
+  width: 60px;
+}
+.education-info h1 {
+  font-family: "galcial-bold", sans-serif;
+  color: white;
+  font-size: 23px;
+}
+.education-info h2 {
+  font-family: "galcial", sans-serif;
+  color: #c6a586;
+  font-size: 13px;
+  font-weight: 500;
+  margin: 15px 0px;
+}
+.education-info h3 {
+  font-family: "galcial", sans-serif;
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.education-info .contact {
+  width: 40px;
+  margin-top: 30px;
+}
+.education-info h4 {
+  color: white;
+  font-family: "galcial-bold", sans-serif;
+  font-size: 15px;
+  margin-top: 15px;
+  font-weight: 600;
+}
+.education-info h5 {
+  color: white;
+  font-family: "galcial-bold", sans-serif;
+  color: #c6a586;
+  font-size: 12px;
+  margin-top: 15px;
+  font-weight: 600;
+}
+.myimg {
+  width: 90%;
+  margin: 0px auto;
+  border-radius: 10px;
+}
+.certificate {
+  margin-top: 50px;
+}
+.certificate h1 {
+  color: white;
+  font-family: "galcial-bold", sans-serif;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.cert-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-family: "galcial-bold", sans-serif;
+}
+.cert-box h2 {
+  color: #c6a586;
+  font-size: 20px;
+}
+.cert-box h3 {
+  color: white;
+  font-size: 15px;
+}
+.cert-box h4 {
+  color: white;
+  font-size: 10px;
+  font-family: "galcial", sans-serif;
+}
+.cert-box a {
+  font-size: 10px;
+  font-family: "galcial", sans-serif;
+}
+.myimg-div {
+  text-align: end;
 }
 @media screen and (max-width: 982px) {
   .nav-inner {
@@ -137,5 +252,89 @@
     padding: 5px 50px;
     margin-top: 34px;
     font-size: 13px;
+  }
+  .about {
+    padding: 50px 10px 100px 10px;
+  }
+  .about .title {
+    margin-bottom: 30px;
+  }
+  .personal-info {
+    padding: 0px 30px;
+    text-align: center;
+  }
+  .personal-info h1 {
+    color: white;
+    font-size: 20px;
+    font-family: "galcial-bold", sans-serif;
+  }
+  .personal-info h2 {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  .personal-info p {
+    font-size: 10px;
+    line-height: 1.8;
+  }
+  .education-info {
+    padding: 0px 30px;
+  }
+  .education-info .school {
+    width: 40px;
+  }
+  .education-info h1 {
+    font-size: 19px;
+  }
+  .education-info h2 {
+    font-size: 11px;
+    margin: 15px 0px;
+  }
+  .education-info h3 {
+    font-size: 10px;
+  }
+  .education-info .contact {
+    width: 28px;
+    margin-top: 20px;
+  }
+  .education-info h4 {
+    font-size: 11px;
+    margin-top: 15px;
+  }
+  .education-info h5 {
+    font-size: 7px;
+    margin-top: 8px;
+    font-weight: 600;
+  }
+  .myimg-div {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .myimg {
+    width: 80%;
+  }
+
+  .certificate {
+    margin-top: 30px;
+  }
+  .certificate h1 {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .cert-box h2 {
+    color: #c6a586;
+    font-size: 13px;
+  }
+  .cert-box h3 {
+    color: white;
+    font-size: 10px;
+  }
+  .cert-box h4 {
+    color: white;
+    font-size: 7px;
+    font-family: "galcial", sans-serif;
+  }
+  .cert-box a {
+    font-size:7px;
+    font-family: "galcial", sans-serif;
   }
 }

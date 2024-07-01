@@ -40,7 +40,7 @@ export default function Navbar() {
                 <a className="nav-link text-white" href="#">
                   HOME
                 </a>
-                <a className="nav-link text-white" href="#">
+                <a className="nav-link text-white" href="#about">
                   ABOUT ME
                 </a>
                 <a className="nav-link text-white " href="#">
