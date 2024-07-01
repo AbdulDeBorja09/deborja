@@ -48,7 +48,7 @@ export default function Navbar() {
                 </a>
                 <a className="nav-link  text-white ">PROJECTS</a>
 
-                <a className="nav-link  text-white ">REACH OUT!</a>
+                <a className="nav-link  text-white " href="#contact">REACH OUT!</a>
               </div>
             </div>
           </div>

@@ -212,6 +212,47 @@
 .myimg-div {
   text-align: end;
 }
+.contact-container {
+  background-image: url("/image/aboutbg.png");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 100px 150px;
+}
+.contact-container .inner-div {
+  backdrop-filter: blur(30px);
+  height: 500px;
+}
+.contact-container label {
+  font-family: "galcial", sans-serif;
+  letter-spacing: 3px;
+  color: white;
+  font-size: 13px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+.contact-container input {
+  background-color: transparent;
+  border: 0;
+  color: #c6a586;
+  width: 100%;
+  border-bottom: 1px solid rgb(153, 153, 153);
+  margin-bottom: 25px;
+}
+.contact-container input::placeholder {
+  color: #c6a586;
+  text-transform: uppercase;
+  font-size: 9px;
+}
+.contact-form h3 {
+  text-align: center;
+  color: white;
+}
+.contact-form {
+  padding: 20px 80px;
+}
+
 @media screen and (max-width: 982px) {
   .nav-inner {
     padding: 20px 20px;
@@ -254,10 +295,11 @@
     font-size: 13px;
   }
   .about {
-    padding: 50px 10px 100px 10px;
+    padding: 40px 10px 100px 10px;
   }
   .about .title {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+    font-size: 25px;
   }
   .personal-info {
     padding: 0px 30px;
@@ -270,7 +312,7 @@
   }
   .personal-info h2 {
     font-size: 15px;
-    margin-top: 20px;
+    margin-top: 15px;
   }
   .personal-info p {
     font-size: 10px;
@@ -334,7 +376,7 @@
     font-family: "galcial", sans-serif;
   }
   .cert-box a {
-    font-size:7px;
+    font-size: 7px;
     font-family: "galcial", sans-serif;
   }
 }

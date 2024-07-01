@@ -10,7 +10,7 @@ export default function About() {
         </h1>
         <div className="row">
           <div className="personal-info col-lg-4 col-md-12">
-            <h1>ABDUL AZIZ DE A. BORJA</h1>
+            <h1>ABDUL AZIZ A. DEBORJA</h1>
             <h2>JUNIOR WEB DEVELOPER</h2>
             <p>
               I'm an IT student in Laguna, studying at the National University.
