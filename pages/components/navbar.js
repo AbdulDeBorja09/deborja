@@ -10,30 +10,46 @@ export default function Navbar() {
             <img className="logo" src={`/image/logo.png`} />
           </a>
           <button
-            className="navbar-toggler text-white"
+            className="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon text-white"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse  navbar-collapse" id="navbarNavAltMarkup">
-            <div className="navbar-nav ml-auto sm-collapse">
-              <a className="nav-link text-white" href="#">
-                HOME
-              </a>
-              <a className="nav-link text-white" href="#">
-                ABOUT ME
-              </a>
-              <a className="nav-link text-white " href="#">
-                EXPERTISE
-              </a>
-              <a className="nav-link  text-white ">PROJECTS</a>
+          <div
+            className="offcanvas offcanvas-end text-bg-dark"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div className="offcanvas-body" id="navbarNavAltMarkup">
+              <div className="offcanvas-header">
+                <h5 className="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                  De Borja
+                </h5>
+                <button
+                  type="button"
+                  className="btn-close btn-close-white"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div className="navbar-nav ml-auto sm-collapse">
+                <a className="nav-link text-white" href="#">
+                  HOME
+                </a>
+                <a className="nav-link text-white" href="#">
+                  ABOUT ME
+                </a>
+                <a className="nav-link text-white " href="#">
+                  EXPERTISE
+                </a>
+                <a className="nav-link  text-white ">PROJECTS</a>
 
-              <a className="nav-link  text-white ">REACH OUT!</a>
+                <a className="nav-link  text-white ">REACH OUT!</a>
+              </div>
             </div>
           </div>
         </div>
