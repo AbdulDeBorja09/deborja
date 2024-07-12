@@ -17,21 +17,23 @@ export default function Contact() {
                 action="https://formsubmit.co/abduldb09@gmail.com"
               >
                 <div className="row">
-                  <div className="col-lg-6 col-md-12">
+                  <div className="col-lg-5  col-md-12">
                     <label for="name">Name</label>
                     <input
                       id="name"
                       type="text"
                       name="name"
+                      className="short-input"
                       placeholder="name"
                     ></input>
                   </div>
-                  <div className="col-lg-6 col-md-12">
+                  <div className="email-input col-lg-5 col-md-12">
                     <label for="email">Email</label>
                     <input
                       id="email"
                       type="email"
                       name="email"
+                       className="short-input"
                       placeholder="Email"
                       required
                     ></input>
@@ -43,6 +45,7 @@ export default function Contact() {
                       type="text"
                       name="_subject"
                       placeholder="Subject"
+                       className="long-input"
                       required
                     ></input>
                   </div>
@@ -53,11 +56,12 @@ export default function Contact() {
                       type="text"
                       name="message"
                       placeholder="Message"
+                               className="long-input"
                       required
                     ></input>
                   </div>
                 </div>
-                <button type="submit">SUBMIT</button>
+              <div className="btn-div"><button type="submit">SUBMIT</button></div>
               </form>
             </div>
           </div>

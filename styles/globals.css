@@ -3,6 +3,9 @@
   padding: 0;
   scrollbar-width: none;
 }
+.row{
+   --bs-gutter-x: 0rem;
+}
 @font-face {
   font-family: "galcial";
   src: url("/fonts/GlacialIndifference-Regular.otf") format("opentype");
@@ -214,45 +217,77 @@
 }
 .contact-container {
   background-image: url("/image/aboutbg.png");
-  height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+
   padding: 100px 150px;
 }
 .contact-container .inner-div {
   backdrop-filter: blur(30px);
-  height: 500px;
+ min-height: 80vh;
 }
 .contact-container label {
   font-family: "galcial", sans-serif;
   letter-spacing: 3px;
   color: white;
   font-size: 13px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   text-transform: uppercase;
 }
 .contact-container input {
   background-color: transparent;
   border: 0;
+
+  padding: 3px 5px;
   color: #c6a586;
-  width: 100%;
   border-bottom: 1px solid rgb(153, 153, 153);
-  margin-bottom: 25px;
+  margin-bottom:50px;
 }
 .contact-container input::placeholder {
   color: #c6a586;
   text-transform: uppercase;
+  letter-spacing: 3px;
   font-size: 9px;
 }
 .contact-form h3 {
+  font-family: "galcial-bold", sans-serif;
+  letter-spacing: 3px;
+  font-size: 20px;
   text-align: center;
   color: white;
+  margin-bottom: 50px;
+}
+.contact-form h3 span {
+  text-align: center;
+  color: #c6a586;
 }
 .contact-form {
+  margin-top: 100px;
   padding: 20px 80px;
+  letter-spacing: 3px;
+  font-family: "galcial", sans-serif;
 }
+.contact-form button{
+  border: 1px solid white;
+  color:white;
+  padding: 7px 30px;
+  margin-top: 30px;
+  font-size: 10px;
+  background-color:transparent;
+}
+.email-input{
+  margin-left: 107px;
 
+}
+.short-input{
+  width: 100%;
+  margin-right: 50px;
+}
+.long-input{
+  width: 100%;
+  margin-right: 50px;
+}
 @media screen and (max-width: 982px) {
   .nav-inner {
     padding: 20px 20px;
@@ -378,5 +413,30 @@
   .cert-box a {
     font-size: 7px;
     font-family: "galcial", sans-serif;
+  }
+  .contact-container {
+    padding: 20px 10px;
+  }
+  .btn-div{
+    text-align: center;
+  }
+  .contact-form {
+    padding: 20px 30px;
+  }
+  .email-input{
+    margin-left: 0px;
+  
+  }
+  .short-input{
+    width: 100%;
+    margin-right: 50px;
+  }
+  .long-input{
+    width: 100%;
+    margin-right: 50px;
+  }
+  .contact-form {
+    margin-top: 20px;
+ 
   }
 }
