@@ -7,7 +7,14 @@ export default function Contact() {
       <section className="contact-container" id="contact">
         <div className="inner-div">
           <div className="row">
-            <div className="col-lg-6 col-md-12">sdsd</div>
+            <div className="my-name col-lg-6 col-md-12">
+              <h1>ABDUL AZIZ A. DE BORJA</h1>
+              <h2>JUNIOR WEB DEVELOPER</h2>
+              <div className="contact-icons">
+              <img  src="/image/phone.png"></img>
+              <img  src="/image/email.png"></img>
+              </div>
+            </div>
             <div className="contact-form col-lg-6 col-md-12">
               <h3>
                 CONTACT <span>ME</span>

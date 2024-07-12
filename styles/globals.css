@@ -250,6 +250,26 @@
   letter-spacing: 3px;
   font-size: 9px;
 }
+.my-name{
+  margin-top: 100px;
+  padding: 20px 100px;
+  letter-spacing: 3px;
+
+}
+.my-name h1{
+  font-family: "galcial-bold", sans-serif;
+  letter-spacing: 4px;
+  color: white;
+  font-size:90px;
+}
+.my-name h2{
+  font-family: "galcial", sans-serif;
+  letter-spacing: 10px;
+  color: #917f66;
+  font-weight: 700;
+  font-size: 25px;
+  margin-top: 30px;
+}
 .contact-form h3 {
   font-family: "galcial-bold", sans-serif;
   letter-spacing: 3px;
@@ -264,9 +284,7 @@
 }
 .contact-form {
   margin-top: 100px;
-  padding: 20px 80px;
-  letter-spacing: 3px;
-  font-family: "galcial", sans-serif;
+  
 }
 .contact-form button{
   border: 1px solid white;
@@ -287,6 +305,15 @@
 .long-input{
   width: 100%;
   margin-right: 50px;
+}
+.contact-icons{
+  display: flex;
+  margin-top: 70px;
+  margin-left: 10px;
+}
+.contact-icons img{
+  width: 35px;
+  margin-right: 40px;
 }
 @media screen and (max-width: 982px) {
   .nav-inner {
@@ -436,7 +463,38 @@
     margin-right: 50px;
   }
   .contact-form {
-    margin-top: 20px;
+    margin-top: 0px;
  
   }
+  .my-name{
+    margin-top: 50px;
+    padding: 10px 20px;
+    text-align: center;
+  
+  }
+  .my-name h1{
+    letter-spacing: 4px;
+    color: white;
+    font-size:40px;
+  }
+  .my-name h2{
+  
+    letter-spacing: 5px;
+    font-size: 15px;
+    margin-top: 30px;
+  }
+  .contact-icons{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-left: 0px;
+  }
+  .contact-icons{
+    padding: 0px 80px;
+  }
+  .contact-icons img{
+    width: 35px;
+    margin-right: 0px;
+  }
+  
 }

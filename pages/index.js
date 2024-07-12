@@ -18,7 +18,7 @@ export default function Home() {
               <span>DEVELOPER</span>,
             </h1>
             <h6>JUNIOR WEB DEVELOPER / FULLSTACK WEB DEVELOPER</h6>
-            <a className="hiremenbtn btn">HIRE ME!</a>
+            <a className="hiremenbtn btn" href="#contact">HIRE ME!</a>
           </div>
         </div>
       </section>
