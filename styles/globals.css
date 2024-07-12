@@ -326,11 +326,13 @@ html, body {
 
 }
 .projects{
-  padding: 0px 100px 100px 100px;
+  padding: 100px 100px 100px 100px;
+  min-height: 100vh;
  
 }
 .projects .col-lg-4{
   padding: 0px 50px;
+  margin-bottom: 70px;
 
 }
 .projects .col-lg-4 h2{
@@ -339,6 +341,7 @@ html, body {
   color: #917f66;
   font-size: 23px;
   margin-top: 20px;
+  
 }
 .projects .col-lg-4 p{
   font-family: "galcial", sans-serif;
