@@ -53,11 +53,11 @@ const OffcanvasNavbar = () => {
                             <a className="nav-link text-white" href="#about" onClick={handleLinkClick}>
                                 ABOUT ME
                             </a>
-                            <a className="nav-link text-white" href="#" onClick={handleLinkClick}>
-                                EXPERTISE
+                            <a className="nav-link text-white" href="#projects" onClick={handleLinkClick}>
+                                PROJECTS
                             </a>
                             <a className="nav-link text-white" href="#" onClick={handleLinkClick}>
-                                PROJECTS
+                                EXPERTISE
                             </a>
                             <a className="nav-link text-white" href="#contact" onClick={handleLinkClick}>
                                 REACH OUT!

@@ -3,6 +3,7 @@ import Image from "next/image";
 import Navbar from "./components/navbar";
 import About from "./components/about";
 import Contact from "./components/contact";
+import Projects from "./components/projects";
 export default function Home() {
   return (
     <>
@@ -24,8 +25,10 @@ export default function Home() {
       </section>
       <section className="elementbg">
         <About />
+        <Projects />
         <Contact />
       </section>
+      
     </>
   );
 }

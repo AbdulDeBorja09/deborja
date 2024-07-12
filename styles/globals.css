@@ -1,3 +1,4 @@
+
 * {
   margin: 0px;
   padding: 0px;
@@ -318,6 +319,65 @@ html, body {
   width: 35px;
   margin-right: 40px;
 }
+.projects h1{
+  text-align: center;
+  color: white;
+  margin-bottom: 70px;
+
+}
+.projects{
+  padding: 0px 100px 100px 100px;
+ 
+}
+.projects .col-lg-4{
+  padding: 0px 50px;
+
+}
+.projects .col-lg-4 h2{
+  font-family: "galcial-bold", sans-serif;
+  letter-spacing: 3px;
+  color: #917f66;
+  font-size: 23px;
+  margin-top: 20px;
+}
+.projects .col-lg-4 p{
+  font-family: "galcial", sans-serif;
+  letter-spacing: 3px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 11px;
+  text-align: justify;
+}
+.projects .col-lg-4 a {
+  font-family: "galcial", sans-serif;
+  letter-spacing: 3px;
+  color: #917f66;
+  cursor: pointer;
+  font-size: 11px;
+}
+.projects .col-lg-4 a:hover{
+  color: white;
+}
+.project-img{
+  width: 100%;
+  border-radius: 10px;
+}
+.tags span{
+ color: white;
+ border: 1px solid white;
+ border-radius: 3px;
+ padding: 3px 5px;
+ font-size: 9px;
+ margin-right: 5px;
+}
+.tags{
+  margin-bottom: 10px;
+}
+.right-arrow{
+  font-size: 20px;
+  
+}
+ 
 @media screen and (max-width: 982px) {
   .nav-inner {
     padding: 20px 20px;
@@ -495,6 +555,48 @@ html, body {
   .contact-icons img{
     width: 35px;
     margin-right: 0px;
+  }
+  .projects h1{
+    margin-bottom: 50px;
+  
+  }
+  .projects{
+    padding: 0px 10px 10px 10px;
+   
+  }
+  .projects .col-lg-4{
+    padding: 0px 30px;
+    margin-bottom: 50px;
+  
+  }
+  .projects .col-lg-4 h2{
+    font-family: "galcial-bold", sans-serif;
+    letter-spacing: 3px;
+    color: #917f66;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .projects .col-lg-4 p{
+    font-family: "galcial", sans-serif;
+    letter-spacing: 3px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 9px;
+    text-align: justify;
+  }
+  .projects .col-lg-4 a {
+    font-family: "galcial", sans-serif;
+    letter-spacing: 3px;
+    color: #917f66;
+    cursor: pointer;
+    font-size: 9px;
+  }
+  .projects .col-lg-4 a:hover{
+    color: white;
+  }
+  .project-img{
+    width: 100%;
+    border-radius: 10px;
   }
   
 }
