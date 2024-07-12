@@ -1,8 +1,12 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box  ;
   scrollbar-width: none;
 }
+html, body {
+  width: 100%;
+  }
 .row{
    --bs-gutter-x: 0rem;
 }
@@ -220,7 +224,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
   padding: 100px 150px;
 }
 .contact-container .inner-div {
@@ -284,7 +287,7 @@
 }
 .contact-form {
   margin-top: 100px;
-  
+  padding: 0px 65px;
 }
 .contact-form button{
   border: 1px solid white;
@@ -449,6 +452,7 @@
   }
   .contact-form {
     padding: 20px 30px;
+    margin-top: 0px;
   }
   .email-input{
     margin-left: 0px;
@@ -456,15 +460,11 @@
   }
   .short-input{
     width: 100%;
-    margin-right: 50px;
+    margin-right: 0px;
   }
   .long-input{
     width: 100%;
-    margin-right: 50px;
-  }
-  .contact-form {
-    margin-top: 0px;
- 
+    margin-right: 0px;
   }
   .my-name{
     margin-top: 50px;

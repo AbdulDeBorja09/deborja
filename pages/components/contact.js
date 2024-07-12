@@ -24,8 +24,8 @@ export default function Contact() {
                 action="https://formsubmit.co/abduldb09@gmail.com"
               >
                 <div className="row">
-                  <div className="col-lg-5  col-md-12">
-                    <label for="name">Name</label>
+                  <div className="col-lg-5 col-md-12">
+                    <label htmlFor="name">Name</label>
                     <input
                       id="name"
                       type="text"
@@ -35,7 +35,7 @@ export default function Contact() {
                     ></input>
                   </div>
                   <div className="email-input col-lg-5 col-md-12">
-                    <label for="email">Email</label>
+                    <label htmlFor="email">Email</label>
                     <input
                       id="email"
                       type="email"
@@ -46,7 +46,7 @@ export default function Contact() {
                     ></input>
                   </div>
                   <div className="col-lg-12 col-md-12">
-                    <label for="sub">Subject</label>
+                    <label htmlFor="sub">Subject</label>
                     <input
                       id="sub"
                       type="text"
@@ -57,7 +57,7 @@ export default function Contact() {
                     ></input>
                   </div>
                   <div className="col-lg-12 col-md-12">
-                    <label for="msg">Message</label>
+                    <label htmlFor="msg">Message</label>
                     <input
                       id="msg"
                       type="text"
