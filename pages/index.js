@@ -4,7 +4,23 @@ import Navbar from "./components/navbar";
 import About from "./components/about";
 import Contact from "./components/contact";
 import Projects from "./components/projects";
+import { useEffect } from "react";
 export default function Home() {
+  useEffect(() => {
+    // Call the API route to send the IP address
+    const sendIpToDiscord = async () => {
+      try {
+        const response = await fetch("/api/sendIp");
+        if (!response.ok) {
+          throw new Error("Failed to send IP to Discord");
+        }
+      } catch (error) {
+        console.error("Error:", error);
+      }
+    };
+
+    sendIpToDiscord();
+  }, []);
   return (
     <>
       <section className="maindiv">
@@ -19,7 +35,9 @@ export default function Home() {
               <span>DEVELOPER</span>,
             </h1>
             <h6>JUNIOR WEB DEVELOPER / FULLSTACK WEB DEVELOPER</h6>
-            <a className="hiremenbtn btn" href="#contact">HIRE ME!</a>
+            <a className="hiremenbtn btn" href="#contact">
+              HIRE ME!
+            </a>
           </div>
         </div>
       </section>
@@ -28,7 +46,6 @@ export default function Home() {
         <Projects />
         <Contact />
       </section>
-      
     </>
   );
 }
