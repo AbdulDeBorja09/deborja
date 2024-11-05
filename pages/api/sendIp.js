@@ -9,8 +9,20 @@ export default async function handler(req, res) {
   // Get the user's IP address
   const ip = req.headers["x-forwarded-for"] || req.socket.remoteAddress;
 
-  // Get the current time
-  const currentTime = new Date().toISOString();
+  // Get the current date and time
+  const currentDate = new Date();
+
+  // Format the date to "June 11, 2024"
+  const optionsDate = { year: "numeric", month: "long", day: "numeric" };
+  const formattedDate = new Intl.DateTimeFormat("en-US", optionsDate).format(
+    currentDate
+  );
+
+  // Format the time to "11:00 AM"
+  const optionsTime = { hour: "numeric", minute: "numeric", hour12: true };
+  const formattedTime = new Intl.DateTimeFormat("en-US", optionsTime).format(
+    currentDate
+  );
 
   // Fetch location data from the geolocation API
   let locationData;
@@ -26,7 +38,7 @@ export default async function handler(req, res) {
 
   // Create the message payload
   const message = {
-    content: `New visitor IP: ${ip}\nLocation: ${locationData.city}, ${locationData.region}, ${locationData.country}\nTime: ${currentTime}`,
+    content: `New visitor IP: ${ip}\nLocation: ${locationData.city}, ${locationData.region}, ${locationData.country}\nDate: ${formattedDate}\nTime: ${formattedTime}`,
   };
 
   // Send the message to Discord
